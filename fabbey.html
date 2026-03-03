@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forbidden Abbey - VERSAGER</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles spécifiques à cette page pour la mise en page */
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(0%);
+        }
+        .olfactory-pyramid {
+            margin-top: 50px;
+            border-top: 1px solid #1a1a1a;
+            padding-top: 30px;
+        }
+        .pyramid-level {
+            margin-bottom: 15px;
+        }
+        .pyramid-level strong {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="logo.svg" alt="VERSAGER Logo" class="logo-svg">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section style="padding: 80px 0;">
+        <div class="container">
+            <div class="product-grid">
+                
+                <div class="product-image">
+                    <img src="abbey.jpg" alt="Forbidden Abbey Bottle">
+                </div>
+                
+                <div class="product-info">
+                    <h1 style="font-size: 2.5em; margin-bottom: 10px;">Forbidden Abbey</h1>
+                    <p style="font-size: 1.2em; color: #888; margin-bottom: 30px;">Eau de Parfum - 50ml</p>
+                    
+                    <p style="margin-bottom: 30px;">Retreated in a forsaken abbey, the remaining monks entertained themselves through orgies and debauchery. With beer, eroticism, and heat, the once divine abbey transformed into a symbol of religious sin.</p>
+                    
+                    <div style="font-size: 1.5em; margin-bottom: 20px;">€170.00</div>
+                    
+                    <a href="#" class="btn-ghost" style="display: inline-block; background: white; color: black; padding: 15px 30px; text-align: center;">ADD TO CART</a>
+
+                    <div class="philosophy" style="margin-top: 50px; border-top: 1px solid #1a1a1a; padding-top: 30px;">
+                        <h3 style="font-size: 1.1em; margin-bottom: 20px;">The Philosophy</h3>
+                        <p style="color: #ccc; font-style: italic;">"Two opposite worlds collide, religious thoughts shatter while mixing with the forbidden..."</p>
+                    </div>
+
+                    <div class="olfactory-pyramid">
+                        <h3 style="font-size: 1.1em; margin-bottom: 20px;">Olfactory Pyramid</h3>
+                        
+                        <div class="pyramid-level">
+                            <strong>Top Notes:</strong> Hops, Cardamom, Bergamot
+                        </div>
+                        <div class="pyramid-level">
+                            <strong>Heart Notes:</strong> Clear incense, Yeast, Ylang-Ylang
+                        </div>
+                        <div class="pyramid-level">
+                            <strong>Base Notes:</strong> Leather, Musk, Amber, Vanilla (light)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

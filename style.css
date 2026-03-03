@@ -1,0 +1,139 @@
+/* --- Style Général & Dark Theme --- */
+:root {
+    --bg-color: #050505;
+    --text-color: #ffffff;
+    --accent-color: #aaaaaa;
+    --font-heading: 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Georgia', serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Layout --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    padding: 20px 0; /* Padding pour laisser respirer le logo */
+    border-bottom: 1px solid #1a1a1a;
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* --- Logo 200px Height --- */
+.logo-svg {
+    height: 200px; 
+    width: auto;   
+    display: block;
+    filter: none !important; /* Sécurité pour éviter tout filtre */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 40px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Sections --- */
+section {
+    padding: 80px 0;
+}
+
+/* --- Grid System --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+/* --- Images (No Grayscale) --- */
+img {
+    max-width: 100%;
+    height: auto;
+    filter: none !important; /* Retire tout filtre de couleur */
+    transition: transform 0.5s ease;
+}
+
+/* --- Product Cards --- */
+.product-card {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.product-card:hover img {
+    transform: scale(1.02);
+}
+
+/* --- Hero Home --- */
+.hero-home {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-home h1 {
+    font-size: 3.5em;
+}
+
+/* --- Pyramide Olfactive --- */
+.pyramide {
+    margin-top: 50px;
+    border-top: 1px solid #222;
+    padding-top: 30px;
+}
+
+.pyramid-level {
+    margin-bottom: 20px;
+}
